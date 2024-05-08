@@ -28,7 +28,7 @@ public class AutomationProject2 {
 
         driver.findElement(By.xpath("//button[@data-testid='login-button']")).click();
 
-        String expectedAccount= "A";
+        String expectedAccount = "A";
         String actualAccount = driver.findElement(By.xpath("//span[@data-testid='username-first-letter']")).getText();
         Assert.assertEquals(actualAccount, expectedAccount);
 
